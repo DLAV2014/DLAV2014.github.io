@@ -1,67 +1,119 @@
 <!DOCTYPE HTML>
-
 <head>
-
     <title>合生创展数码科技有限公司</title>
     <meta name="keywords" content="create from keywords">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<!-- CSS 代码 -->
+		<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="menu/css/simple_menu.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/prettyPhoto.css"/>
+		<link rel="stylesheet" type="text/css" href="css/gridNavigation.css" />
+	<!-- CSS 代码 -->
+	<!-- 轮播代码 -->
 
-<!-- CSS Files -->
-
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="menu/css/simple_menu.css">
-    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen"/>
-    <link rel="stylesheet" type="text/css" href="css/gridNavigation.css" />
-
+		  <script typet="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		  <style type="text/css">
+			 ul,li,img{border:0px;list-style-type: none;}
+			.apl_home_img_first{width: 960px; height: 300px;}
+			.home_slideshow{position:relative;}
+			.apl_home_layered ul li{display:none;}
+			.home_hoves{position:absolute;bottom:0;left:50%;transform: translate(-50%,0);}
+			.home_hover{cursor:pointer;position:relative;display:inline-block;width:12px;height:12px;margin:12px;border-radius:8px;background:#227FF;opacity:0.7;}
+		  </style>
+	<!-- 轮播代码 -->
 </head>
 
 <body>
 
-   <div class="header">
+	<div class="header">
    
-    <!-- Logo/Title -->
-    
-    <div id="site_title"><a href="index.html">
-        <img src="img/logo.png" alt="My Site Title" /></a>
-    </div>  
-        
-    <!-- Main Menu -->
-    
-   <ol id="menu">
-             <li class="active_menu_item"><a href="index.html" style="color:#FFF">首页</a>
-        
-              <!-- sub menu -->
-        
-        <li><a href="#">产品类目</a>
-        
-              <!-- sub menu -->
-              <ol>     
-                <li><a href="magazine.html">影院功放</a></li>
-                <li><a href="blog.html">音箱/低音炮</a></li>
-                <li><a href="full-width.html">投影机/幕布</a></li>
-                <li><a href="columns.html">配件</a></li>
-				<li><a href="columns.html">智能控制</a></li>
-              </ol>
-        </li><!-- end sub menu -->
-        
-        <li><a href="elements.html">公司简介</a></li>
+	<!-- Logo商标 -->
 		
-        <li><a href="#">公司案例</a></li>
+		<div id="site_title"><a href="index.html">
+			<img src="img/logo.png" alt="合生创展数码科技有限公司" /></a>
+		</div>  
+	<!-- Logo商标 -->
 
-		<li><a href="contact.html">联系我们</a></li>
-    </ol>
-     
-       </div> 
-       
-     <!-- END header -->
 
-	<div id="container">
-	<!-- container 保持页面宽度 -->
+	<!-- 导航条 -->
+	   <ol id="menu">
+				 <li class="active_menu_item"><a href="index.html" style="color:#FFF">首页</a>
+			
+				  <!-- sub menu -->
+			
+			<li><a href="#">产品类目</a>
+			
+				  <!-- sub menu -->
+				  <ol>     
+					<li><a href="gongfang.html">影院功放</a></li>
+					<li><a href="yinxiang.html">音箱/低音炮</a></li>
+					<li><a href="touyingji.html">投影机/幕布</a></li>
+					<li><a href="#">配件</a></li>
+					<li><a href="#">智能控制</a></li>
+				  </ol>
+			</li><!-- end sub menu -->
+			
+			<li><a href="elements.html">公司简介</a></li><strong></strong>
+			
+			<li><a href="#">公司案例</a></li>
 
-    <div style="margin-bottom: 15px">
-        <img title="" src="img/demo/slide_2.jpg" alt="" width="960" height="450" />
-    </div>
-    
+			<li><a href="contact.html">联系我们</a></li>
+		</ol>
+		   </div> 
+	<!-- 导航条 -->
+
+
+   <div id="container">		<!-- container 保持页面宽度 -->
+	<!-- 轮播代码 -->
+		<div class="apl_home_layered home_slideshow">
+				<ul>
+					<li style="display:block;"><a href="#"><img id="#" src="img/haibao/650.jpg" class="apl_home_img_first" alt="1"/></a></li>
+					<li><a href="#"><img id="#" src="img/haibao/676E.jpg" class="apl_home_img_first" alt="2" /></a></li>
+					<li><a href="#"><img id="#" src="img/haibao/bose191.jpg" class="apl_home_img_first" alt="3" /></a></li> 
+					<li><a href="#"><img id="#" src="img/haibao/EQ-MAX12.jpg" class="apl_home_img_first" alt="4" /></a></li> 
+				</ul>
+				<p class="home_hoves" >
+					<span class="home_hover"></span>
+					<span class="home_hover"></span>
+					<span class="home_hover"></span>
+					<span class="home_hover"></span>
+				</p>
+				<script>
+					var index = 0;//标记
+					var time;//定时器
+					$(document).ready(function(){ 
+						var len=$(".apl_home_layered ul li").length;
+						//循环
+						function showstart(){
+							index++;
+							if(index == len){
+								index = 0;
+							}//加载到最后一张，重新开始
+							$(".apl_home_layered ul li").eq(index).fadeIn(500).siblings().hide();
+							var i = $(".home_hoves span").eq(index).css("background-color","#227FFE").siblings().css("background-color","#777");//得到该节点并设置背景样式，其它的兄弟节点设置背景样式
+						}
+						//定时
+						function action(){
+							time = setInterval(function(){showstart();}, 2000);//定时加载showstart()方法
+						}
+						//鼠标移入
+						$(".home_hoves span").mouseover(function(){
+							$(this).css("background-color","#227FFE").siblings().css("background-color","#777");
+							var s = $(this).index();
+							$(".apl_home_layered ul li").eq(s).fadeIn(500).siblings().hide();
+							//console.log(s);
+							clearInterval(time);//移除定时器
+						});
+						//鼠标移出
+						$(".home_hoves span").mouseout(function(){
+							action();//加载定时器
+						});
+						action();//初始化加载action()方法
+					}); 
+				</script> 
+		</div>
+	<!-- 轮播代码 -->
+
     <div style="clear:both"></div>
     
     <h2 style="padding: 20px 0">Come on.Let you know what a real Master Of Acoustics is</h2>
@@ -97,7 +149,7 @@
           <p><small class="right">——2019/11/9</small></p>
     </div>
 
-    <div style="clear:both; height: 40px"></div>
+    <div style="clear:both; height: 15px"></div>
     </div>
 
     <!-- END container -->
@@ -108,24 +160,24 @@
     <!-- First Column -->
 
     <div class="one-fourth">
-        <h3>待开启</h3>
+        <h3>常用品牌官网</h3>
             <ul class="footer_links">
-                <li><a href="#">栏目1</a></li>
-                <li><a href="#">栏目2</a></li>
-                <li><a href="#">栏目3</a></li>
-                <li><a href="#">栏目4</a></li>
+                <li><a href="http://www.cn.onkyo.com/2018newsite/">Onkyo/安桥</a></li>
+                <li><a href="http://www.denon.com.cn/cn">Denon/天龙</a></li>
+                <li><a href="https://www.bose.cn/zh_cn/index.html">Bose/博士</a></li>
+                <li><a href="https://cn.jbl.com/">Jbl/杰宝</a></li>
             </ul>
     </div>
     
     <!-- Second Column -->
     
     <div class="one-fourth">
-        <h3>待开启2</h3>
+        <h3>&nbsp;</h3>
             <ul class="footer_links">
-                <li><a href="#">栏目5</a></li>
-                <li><a href="#">栏目6</a></li>
-                <li><a href="#">栏目7</a></li>
-                <li><a href="#">栏目8</a></li>
+                <li><a href="http://www.pioneer-twn.com.tw/p1-product_type.asp">Pioneer/先锋</a></li>
+                <li><a href="http://www.integra.com.cn/">Integra/英桥</a></li>
+                <li><a href="https://mksound.com/">Mksound/MK</a></li>
+                <li><a href="http://velodyneacoustics.com/">Velodyne/威力登</a></li>
             </ul>
     </div>
     
