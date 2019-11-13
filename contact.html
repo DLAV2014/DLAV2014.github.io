@@ -1,17 +1,14 @@
 <!DOCTYPE HTML>
-
 <head>
-
-    <title>Bigshot Theme by CssTemplateHeaven</title>
+    <title>合生创展数码科技有限公司</title>
     <meta name="keywords" content="create from keywords">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
-<!-- CSS Files -->
-
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="menu/css/simple_menu.css">
-    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen"/>
+	<!-- CSS 代码 -->
+		<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="menu/css/simple_menu.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/prettyPhoto.css"/>
+		<link rel="stylesheet" type="text/css" href="css/gridNavigation.css" />
+	<!-- CSS 代码 -->
 
 <!-- JS Files -->
 
@@ -46,64 +43,45 @@
         <img src="img/logo.png" alt="My Site Title" /></a>
     </div>  
         
-    <!-- Main Menu -->
-    
-    <ol id="menu">
-             <li><a href="index.html">Home</a>
-        
-              <!-- sub menu -->
-              <ol>  
-                <li><a href="nivo.html">Nivo Slider</a></li>
-                <li><a href="ei_slider.html">EI Slider</a></li>
-                <li><a href="image_frontpage.html">Static Image</a></li>
-              </ol>
-              </li><!-- end sub menu -->
-        
-        <li><a href="#">Pages</a>
-        
-              <!-- sub menu -->
-              <ol>     
-                <li><a href="magazine.html">Magazine</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="full-width.html">Full Width Page</a></li>
-                <li><a href="columns.html">Columns</a></li>
-              </ol>
-        </li><!-- end sub menu -->
-        
-        <li><a href="elements.html">Elements</a></li>
-              
-        <li><a href="#">Galleries</a>
-        
-              <!-- sub menu -->
-              <ol>     
-                <li><a href="gallery-simple.html">Simple</a></li>
-                <li><a href="portfolio.html">Filterable</a></li>
-                <li><a href="gallery_fader.html">Fade Scroll</a></li>
-                <li><a href="video.html">Video</a></li>
-                <li class="last"><a href="photogrid.html">PhotoGrid</a></li>
-              </ol>
-        </li><!-- end sub menu -->
-        
-               <li><a href="contact.html">Contact</a></li>
-    </ol>
-     
-       </div> 
-       
-     <!-- END header -->
+	<!-- 导航条 -->
+	   <ol id="menu">
+				 <li class="active_menu_item"><a href="index.html" style="color:#FFF">首页</a>
+			
+				  <!-- sub menu -->
+			
+			<li><a href="#">产品类目</a>
+			
+				  <!-- sub menu -->
+				  <ol>     
+					<li><a href="gongfang.html">影院功放</a></li>
+					<li><a href="yinxiang.html">音箱/低音炮</a></li>
+					<li><a href="touyingji.html">投影机/幕布</a></li>
+					<li><a href="#">配件</a></li>
+					<li><a href="#">智能控制</a></li>
+				  </ol>
+			</li><!-- end sub menu -->
+			
+			<li><a href="elements.html">公司简介</a></li><strong></strong>
+			
+			<li><a href="#">公司案例</a></li>
+
+			<li><a href="contact.html">联系我们</a></li>
+		</ol>
+		   </div> 
+	<!-- 导航条 -->
+
 
     <div id="container">
 
-    <h1>Full Width Page</h1>
+    <h1>让我们为您提供专业化的服务</h1>
     
-    <div class="one-half">
-
-        <div class="heading_bg"><h2>Contact</h2></div>
-          <p><strong>Professional Studios</strong><br />
-          NORWAY<br /><br />
-          Tel: (+47) 99 88 77 66<br />
-          mail: mail@studios.com
+     <div class="one-third" style="width: 400px" >
+        <div class="heading_bg"><h2>业务联系</h2></div>
+          <p><strong>专业影院设计师</strong><br />
+          周先生<br /><br />
+          电话: (+86) 186 8803 4000<br />
+          微信: DLAV2014
           </p>
-    
     </div>
     
     <div class="one-half last">
@@ -111,7 +89,7 @@
         <form action="#" id="contact_form" method="post">
     
         <fieldset>
-            <label>Name <span class="required">*</span></label>
+            <label>姓名 <span class="required">*</span></label>
             <input type="text" name="name" id="Myname" value="" class="text requiredField"/>
         </fieldset>
         
@@ -120,17 +98,16 @@
             <input type="text" name="email" id="myemail" value="" class="text requiredField email"/>
         </fieldset>
         <fieldset>
-            <label>Subject <span class="required">*</span></label>
+            <label>主题 <span class="required">*</span></label>
             <input type="text" name="subject" id="mySubject" value="" class="text requiredField subject"/>
         
         </fieldset>
         <fieldset>
-            <label>Your Message <span class="required">*</span></label>
+            <label>您想告知我们的<span class="required">*</span></label>
             <textarea name="message" id="Mymessage" rows="20" cols="30" class="text requiredField"></textarea>
         </fieldset>
         <fieldset>
-            <input name="Mysubmitted" id="Mysubmitted" value="Send Message" class="button white" type="submit"/>
-        
+            <a href="javascript:void(0)" onclick="alert('您的消息已提交， 我们会尽快与您取得联系。')" "=""><input name="Mysubmitted" id="Mysubmitted" value="提交" class="button white" type="submit"/></a>
         </fieldset>
         
     </form>
@@ -148,43 +125,39 @@
     <!-- First Column -->
 
     <div class="one-fourth">
-        <h3>Useful Links</h3>
+        <h3>常用品牌官网</h3>
             <ul class="footer_links">
-                <li><a href="#">Lorem Ipsum</a></li>
-                <li><a href="#">Ellem Ciet</a></li>
-                <li><a href="#">Currivitas</a></li>
-                <li><a href="#">Salim Aritu</a></li>
+                <li><a href="http://www.cn.onkyo.com/2018newsite/">Onkyo/安桥</a></li>
+                <li><a href="http://www.denon.com.cn/cn">Denon/天龙</a></li>
+                <li><a href="https://www.bose.cn/zh_cn/index.html">Bose/博士</a></li>
+                <li><a href="https://cn.jbl.com/">Jbl/杰宝</a></li>
             </ul>
     </div>
     
     <!-- Second Column -->
     
     <div class="one-fourth">
-        <h3>Terms</h3>
+        <h3>&nbsp;</h3>
             <ul class="footer_links">
-                <li><a href="#">Lorem Ipsum</a></li>
-                <li><a href="#">Ellem Ciet</a></li>
-                <li><a href="#">Currivitas</a></li>
-                <li><a href="#">Salim Aritu</a></li>
+                <li><a href="http://www.pioneer-twn.com.tw/p1-product_type.asp">Pioneer/先锋</a></li>
+                <li><a href="http://www.integra.com.cn/">Integra/英桥</a></li>
+                <li><a href="https://mksound.com/">Mksound/MK</a></li>
+                <li><a href="http://velodyneacoustics.com/">Velodyne/威力登</a></li>
             </ul>
     </div>
     
     <!-- Third Column -->
     
     <div class="one-fourth">
-        <h3>Information</h3>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet enim id dui tincidunt vestibulum rhoncus a felis.
-        
-        <div id="social_icons">
-        Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
-        </div>
-        
+        <h3>网页版权声明</h3>
+        本网站(网站地址)刊载的所有内容,包括文字、图片、音频、视频、软件、程序、以及网页版式设计等均在网上搜集。<br>
+		本网站内容原作者如不愿意在本网站刊登内容,请及时通知本站,予以删除。        
     </div>
     
     <!-- Fourth Column -->
     
     <div class="one-fourth last">
-        <h3>Socialize</h3>
+        <h3>快捷联系</h3>
             <img src="img/icon_fb.png" alt="Facebook">
             <img src="img/icon_twitter.png" alt="Facebook">
             <img src="img/icon_in.png" alt="Facebook">
