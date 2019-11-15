@@ -154,7 +154,7 @@
 }
 
 #menu_top ol ol li:first-child a:hover:after {
-        border-right-color: #0299d3;
+        border-right-color: #73a31f;
         border-bottom-color: transparent;
 }
 
@@ -172,7 +172,7 @@
     Main Menu
 --------------------------------*/
 
-.active_menu_item {background: #02B1DC; border-radius: 5px}
+.active_menu_item {background: #73a31f; border-radius: 5px}
 
 #menu, #menu ol {
         margin: 0;
@@ -218,7 +218,7 @@
 
 #menu li:hover > a {
         color: #FFF;
-		background: #02B1DC;
+		background: #73a31f;
 		border-radius: 5px;
 }
 
@@ -290,7 +290,7 @@
 }
 
 #menu ol a:hover {
-        background-color: #02B1DC;
+        background-color: #73a31f;
 		color: #FFF
 }
 
@@ -325,7 +325,7 @@
 }
 
 #menu ol ol li:first-child a:hover:after {
-        border-right-color: #0299d3;
+        border-right-color: #73a31f;
         border-bottom-color: transparent;
 }
 
@@ -499,7 +499,7 @@
 }
 
 #menu2 ol ol li:first-child a:hover:after {
-        border-right-color: #0299d3;
+        border-right-color: #73a31f;
         border-bottom-color: transparent;
 }
 
@@ -523,7 +523,7 @@
 
 .container_links {padding: 10px 0}
 
-.container_links li {border-bottom: 1px dotted #CCC; padding: 3px 5px; letter-spacing: 2px}
+.container_links li {border-bottom: 1px dotted #00C; padding: 3px 5px; letter-spacing: 2px}
 
 /*-------------------------------
     Footer Links (Vertical)
