@@ -125,7 +125,7 @@ p {
 
 .post_meta {padding-bottom: 5px 3px}
 
-.post_meta li {display: inline-block; font-family:Georgia, "Times New Roman", Times, serif; font-style:italic; font-size: 12px; height: 16px; line-height:16px; padding-left: 22px; margin-right: 15px}
+.post_meta li {display: inline-block; font-family:Georgia, "microsoft yahei", Times, serif; font-size: 12px; height: 16px; line-height:16px; padding-left: 22px; margin-right: 15px}
 
 .post_meta_admin {background: url("img/sprite.png") no-repeat 0 -64px}
 .post_meta_date{background: url("img/sprite.png") no-repeat 0 -80px}
@@ -146,7 +146,7 @@ a {color: #2997AB; text-decoration: none}
 #container ul li {list-style:none}
 #container ol li {list-style: none}
 
-blockquote {font-family:Georgia, "Times New Roman", Times, serif; font-style: italic; margin: 10px 0}
+blockquote {font-family:Georgia, "Times New Roman", Times, serif; margin: 10px 0}
 
 /* Lists *
 
