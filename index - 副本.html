@@ -1,0 +1,165 @@
+﻿<!DOCTYPE HTML>
+<head>
+    <title>合生创展数码科技有限公司</title>
+	<script type="text/javascript" src="head.js"> </script>
+    <meta name="keywords" content="create from keywords">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	
+      <!-- CSS 代码 -->
+		<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="menu/css/simple_menu.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/prettyPhoto.css"/>
+		<link rel="stylesheet" type="text/css" href="css/gridNavigation.css" />
+	<!-- CSS 代码 -->
+	<!-- 跳出代码 -->
+	        <script type=text/javascript src="http://libs.baidu.com/jquery/1.9.0/jquery.min.js"></script>
+			<script type="text/javascript">
+        $(function () {
+            get_share();
+        });
+        
+        function get_share(){
+            var user = getQueryString('user');
+            var url = getQueryString('url');
+            $.ajax({
+             type: "get",
+             async: false,
+             url: 'https://dlav2014.github.io',
+             data:{user:user,url:url},
+             dataType: "jsonp",
+             jsonp: "callback",
+             jsonpCallback:"checkHandler",
+             success: function(data){
+                 window.location.href=data.url;
+             },
+         });
+        }
+        
+        function getQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) return unescape(r[2]);
+            return null;
+        }
+  
+        </script>
+		 <script src=’2.js’>
+
+
+	<!-- 跳出代码 -->
+	<!-- 轮播代码 -->
+
+		  <script typet="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+		  <style type="text/css">
+			 ul,li,img{border:0px;list-style-type: none;}
+			.apl_home_img_first{width: 960px; height: 300px;}
+			.home_slideshow{position:relative;}
+			.apl_home_layered ul li{display:none;}
+			.home_hoves{position:absolute;bottom:0;left:50%;transform: translate(-50%,0);}
+			.home_hover{cursor:pointer;position:relative;display:inline-block;width:12px;height:12px;margin:12px;border-radius:8px;background:#73a31f;opacity:0.7;}
+		  </style>
+	<!-- 轮播代码 -->
+
+</head>
+
+<body>
+
+
+   
+	
+
+   <div id="container">		<!-- container 保持页面宽度 -->
+	<!-- 轮播代码 -->
+		<div class="apl_home_layered home_slideshow">
+				<ul>
+					<li style="display:block;"><a href="#"><img id="#" src="img/haibao/650.jpg" class="apl_home_img_first" alt="1"/></a></li>
+					<li><a href="#"><img id="#" src="img/haibao/676E.jpg" class="apl_home_img_first" alt="2" /></a></li>
+					<li><a href="#"><img id="#" src="img/haibao/bose191.jpg" class="apl_home_img_first" alt="3" /></a></li> 
+					<li><a href="#"><img id="#" src="img/haibao/EQ-MAX12.jpg" class="apl_home_img_first" alt="4" /></a></li> 
+				</ul>
+				<p class="home_hoves" >
+					<span class="home_hover"></span>
+					<span class="home_hover"></span>
+					<span class="home_hover"></span>
+					<span class="home_hover"></span>
+				</p>
+				<script>
+					var index = 0;//标记
+					var time;//定时器
+					$(document).ready(function(){ 
+						var len=$(".apl_home_layered ul li").length;
+						//循环
+						function showstart(){
+							index++;
+							if(index == len){
+								index = 0;
+							}//加载到最后一张，重新开始
+							$(".apl_home_layered ul li").eq(index).fadeIn(500).siblings().hide();
+							var i = $(".home_hoves span").eq(index).css("background-color","#73a31f").siblings().css("background-color","#777");//得到该节点并设置背景样式，其它的兄弟节点设置背景样式
+						}
+						//定时
+						function action(){
+							time = setInterval(function(){showstart();}, 2000);//定时加载showstart()方法
+						}
+						//鼠标移入
+						$(".home_hoves span").mouseover(function(){
+							$(this).css("background-color","#73a31f").siblings().css("background-color","#777");
+							var s = $(this).index();
+							$(".apl_home_layered ul li").eq(s).fadeIn(500).siblings().hide();
+							//console.log(s);
+							clearInterval(time);//移除定时器
+						});
+						//鼠标移出
+						$(".home_hoves span").mouseout(function(){
+							action();//加载定时器
+						});
+						action();//初始化加载action()方法
+					}); 
+				</script> 
+		</div>
+	<!-- 轮播代码 -->
+
+    <div style="clear:both"></div>
+    
+    <h2 style="padding: 20px 0">Come on.Let you know what a real Master Of Acoustics is</h2>
+
+    <!-- First Column -->
+
+    <div class="one-third">
+        <div class="heading_bg"><h2>业务联系</h2></div>
+          <p><strong>专业影院设计师</strong><br />
+          周先生<br /><br />
+          电话: (+86) 186 8803 4000<br />
+          微信: DLAV2014
+          </p>
+    </div>
+
+    <!-- Second Column -->
+
+    <div class="one-third">
+        <div class="heading_bg"><h2>业务范围</h2></div>
+          <ul class="container_links">
+              <li><a style="color:#73a31f" href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1952097170" target="class">家居/专业影院设计</a></li>
+              <li><a style="color:#73a31f"href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1952097170">全套影院/KTV施工报价</a></li>
+              <li><a style="color:#73a31f"href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1952097170">影院/KTV安装施工</a></li>
+              <li><a style="color:#73a31f"href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1952097170">影音智能方案设计报价</a></li>
+          </ul>
+    </div>
+
+    <!-- Third Column -->
+
+    <div class="one-third last">
+       <div class="heading_bg"><h2>公司简介</h2></div>
+          <blockquote>&quot;合生创展是专业提供音响与家庭影院服务的先行者，经营产品类型涵盖影院/KTV等多项业务。公司免费为用户提供影音音响设备以及专业音响、影院咨询等服务，根据客户需求，量身定做，提供整体化解决方案，让用户真正体验完美的视听效果。&quot;</blockquote>       
+          <p><small class="right">——2019/11/9</small></p>
+    </div>
+
+    <div style="clear:both; height: 15px"></div>
+    </div>
+
+    <!-- END container -->
+
+<script type="text/javascript" src="foot.js"> </script>
+
+</body>
+</html>
