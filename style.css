@@ -108,6 +108,8 @@ h3 {font-size: 2em}
 
 h4 {font-size: 1.2em; font-weight: 700}
 
+h7 { font-size: 1.1em;font-weight: 700; letter-spacing:0px; text-indent:900px}
+
 .heading_bg {background: url(img/heading_bg.png) repeat-x 0 30px }
 
 .heading_bg h1, 
