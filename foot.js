@@ -1,4 +1,4 @@
-document.writeln("    <div id=\'footer\'>");
+﻿document.writeln("    <div id=\'footer\'>");
 document.writeln("");
 document.writeln("");
 document.writeln("");
@@ -36,7 +36,7 @@ document.writeln("    <!-- Fourth Column -->");
 document.writeln("    ");
 document.writeln("    <div class=\'one-fourth last\'>");
 document.writeln("        <h3>快捷联系</h3>");
-document.writeln("            <a href=\'tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1952097170\'><img src=\'img/qq.png\' ></a>");
+document.writeln("            <a href=\'tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1952097170\'><img src=\'https://dlav2014.github.io/img/qq.png\' ></a>");
 document.writeln("    </div>");
 document.writeln("");
 document.writeln("    <div style=\'clear:both\'></div>");
